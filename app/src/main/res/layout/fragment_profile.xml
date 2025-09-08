@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal">
+
+    <!-- Profile Icon Placeholder -->
+    <ImageView
+        android:id="@+id/ivProfileIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profilelogo"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="Profile Icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/adlam_display"
+        android:paddingBottom="30dp"/>
+
+    <!-- Profile Fields -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#555555"
+        android:paddingBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColorHint="#888888"
+        android:textColor="#000000"
+        android:hint="Enter your name" /> <!-- Replace with actual user info -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#555555"
+        android:paddingBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etProfileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:enabled="false"
+        android:padding="12dp"
+        android:textColorHint="#888888"
+        android:textColor="#000000"
+        android:hint="Enter your email id" /> <!-- Replace with actual user info -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="#555555"
+        android:paddingBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etProfileAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColorHint="#888888"
+        android:textColor="#000000"
+        android:hint="Enter your address" /> <!-- Replace with actual user info -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textColor="#555555"
+        android:paddingBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etProfilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColorHint="#888888"
+        android:textColor="#000000"
+        android:hint="Enter your phone number" /> <!-- Replace with actual user info -->
+
+    <!-- Save Profile Button -->
+    <Button
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Profile"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/primary_button"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp" />
+</LinearLayout>

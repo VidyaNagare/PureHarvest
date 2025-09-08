@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal">
+
+    <!-- Orders Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Orders"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/adlam_display"
+        android:paddingBottom="24dp"
+        android:textColor="#000000" />
+
+    <!-- RecyclerView for Orders -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ordersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- Total Amount Text -->
+    <TextView
+        android:id="@+id/totalSumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: ₹0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#555555"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp"
+        android:textAlignment="center" />
+
+    <!-- Empty Orders Text -->
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No orders available."
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#888888"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Loading Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

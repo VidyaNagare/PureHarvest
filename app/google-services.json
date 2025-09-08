@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316965553331",
+    "project_id": "pureharvest-fcf86",
+    "storage_bucket": "pureharvest-fcf86.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316965553331:android:5bb44d7920a0f9d1c01cc6",
+        "android_client_info": {
+          "package_name": "com.example.pureharvest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcJa_rAalDdT8x0OJNnSnf3tai-vbz-As"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

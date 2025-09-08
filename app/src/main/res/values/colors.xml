@@ -1,0 +1,9 @@
+<resources>
+    <color name="background_color">#F5F5F5</color> <!-- Light Gray -->
+    <color name="card_background">#FFFFFF</color> <!-- White -->
+    <color name="text_primary">#212121</color> <!-- Dark Text -->
+    <color name="hint_color">#757575</color> <!-- Light Hint -->
+    <color name="primary_button">#388E3C</color> <!-- Green Button -->
+    <color name="edittext_border">#BDBDBD</color> <!-- Border -->
+    <color name="white">#FFFFFF</color> <!-- Light Gray -->
+</resources>
