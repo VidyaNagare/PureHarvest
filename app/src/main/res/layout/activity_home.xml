@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".HomeActivity">
+
+    <!-- Top Navigation Bar with Back Button -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="start" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <!-- Existing Content Below -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logopureharvest" />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register as a Consumer or Farmer"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="40dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/vegImage"
+        android:layout_width="296dp"
+        android:layout_height="296dp"
+        android:layout_gravity="center"
+        android:src="@drawable/homepgbg"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Consumer Button -->
+    <Button
+        android:id="@+id/btnConsumer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consumer"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50" />
+
+    <!-- Farmer Button -->
+    <Button
+        android:id="@+id/btnFarmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Farmer"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFC107" />
+
+</LinearLayout>

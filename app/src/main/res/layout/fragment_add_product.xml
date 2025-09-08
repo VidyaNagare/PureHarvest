@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Title: Add New Product -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Product"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Main Content Container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleText"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Product Name Input -->
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Product Name"
+                android:background="@drawable/rounded_corner_background"
+                android:padding="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:elevation="2dp" />
+
+            <!-- Description Input -->
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Description"
+                android:background="@drawable/rounded_corner_background"
+                android:padding="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:elevation="2dp" />
+
+            <!-- Price Input -->
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:background="@drawable/rounded_corner_background"
+                android:padding="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:elevation="2dp" />
+
+            <!-- Image URL Input -->
+            <EditText
+                android:id="@+id/etImageUrl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Image URL"
+                android:background="@drawable/rounded_corner_background"
+                android:padding="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:elevation="2dp" />
+
+            <!-- Quantity Input -->
+            <EditText
+                android:id="@+id/etQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:background="@drawable/rounded_corner_background"
+                android:padding="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:elevation="2dp" />
+
+            <!-- Category Input -->
+            <EditText
+                android:id="@+id/etCategory"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Category"
+                android:background="@drawable/rounded_corner_background"
+                android:padding="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp" />
+
+            <!-- Save Product Button -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Save Product"
+                android:backgroundTint="@color/primary_button"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:elevation="2dp"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
